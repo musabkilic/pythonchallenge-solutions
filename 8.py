@@ -7,6 +7,6 @@ im = Image.open(t)
 
 msg = ""
 for x in range(4, 608, 7):
-   msg += chr(im.getpixel((x, 45))[0])
+    msg += chr(im.getpixel((x, 45))[0])
 print(msg)
 print("".join(chr(x) for x in eval(msg[42:])))
